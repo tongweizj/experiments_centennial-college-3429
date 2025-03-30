@@ -18,6 +18,7 @@ namespace Question2;
 /// </summary>
 public partial class MainWindow : Window
 {
+
     List<MenuItem> menuItems;
     List<string> selectedBills;
     public ObservableCollection<BillItem> billItems { get; set; }

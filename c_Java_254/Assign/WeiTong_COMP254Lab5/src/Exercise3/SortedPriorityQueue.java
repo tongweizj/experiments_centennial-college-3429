@@ -104,8 +104,6 @@ public class SortedPriorityQueue<K,V> extends AbstractPriorityQueue<K,V> {
   @Override
   public int size() { return size; }
   
-  
-
 	    public static void main(String[] args) {
 	        // 创建一个容量为10的优先队列，key 是 Integer（优先级），value 是 String（任务名）
 	        SortedPriorityQueue<Integer, String> pq = new SortedPriorityQueue<>(10);

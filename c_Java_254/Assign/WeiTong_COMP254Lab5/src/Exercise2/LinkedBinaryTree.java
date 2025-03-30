@@ -317,7 +317,14 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
     
   public void printPostorder () {
 	  for (Position<E> p : this.postorder()) {
-	      int height = getSubtreeHeight(p);
+		  
+	      int height = 0;
+	      if (left(p) != null) {
+	    	  height= getSubtreeHeight(left(p));
+	      }else {
+	    	  height=0;
+	      }
+	    	  
 	      System.out.println("Element: " + p.getElement() + " Height: " + height );
 	  }
   }

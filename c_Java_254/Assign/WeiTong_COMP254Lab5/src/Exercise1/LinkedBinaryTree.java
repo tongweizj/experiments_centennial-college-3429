@@ -310,9 +310,6 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
   }
   
   
-  
-  
-  
   public static<E> void printP(Position<E> p) {
 	
 	if(p == null){
@@ -351,7 +348,6 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
 				  point = point.getLeft();
 			  }
 			  result = point;
-			  
 		  }
 	  }
 	  
@@ -429,7 +425,10 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
 //	  
 	  Position<String> rootLeftRightLeft = lbt.addLeft(rootLeftRight, "10");
 	  Position<String> rootLeftRightRight = lbt.addRight(rootLeftRight, "11");
-	  //
+	  //          1
+	  //     2          3
+	  // 4      5     6   7
+	  //8  9  10  11
 	  
 
 	  System.out.println("printinorder");
